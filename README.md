@@ -38,14 +38,14 @@ Figure.4: Qualitative result of our proposed INT method, depicting success and f
 7. Invert rotate the input variant predictions as given in `TrustMIS.ipynb`.
 8. Run the final cell of `TrustMIS.ipynb` that computes the consistency (dice) between input predictions and inver-rotated input variant prediction. It investigates their trustworthiness and provides the confidence measure of each sample.
 ### 3.2  INT (Improving Non-Trustworthy prediction) method:
-1. Following the [IT method](https://github.com/SnehaShukla937/TrustMIS/tree/main#31--it-investigating-trustworthiness-method) to investigate trustworthiness of each sample.
+1. Follow the [IT method](https://github.com/SnehaShukla937/TrustMIS/tree/main#31--it-investigating-trustworthiness-method) to investigate trustworthiness of each sample.
 2. If the medical image segmentation prediction is found to be non-trustworthy, then compute the `YA` and `YB` masks as given in `TrustMIS.ipynb`
-   (follow [paper]<https://www.sciencedirect.com/science/article/pii/S0893608023003581#tbl2> ).    
+   (follow [paper](https://www.sciencedirect.com/science/article/pii/S0893608023003581#tbl2) ).    
 4. Run the final cell of `TrustMIS.ipynb` that provides the improved performance of medical image segmentation prediction (*c<sup>INT</sup>*).
 ### 3.3  CSO (Classifier Switching Operation) method:
-1. Following the [INT method](https://github.com/SnehaShukla937/TrustMIS/tree/main#32--int-improving-non-trustworthy-prediction-method).
+1. Follow the [INT method](https://github.com/SnehaShukla937/TrustMIS/tree/main#32--int-improving-non-trustworthy-prediction-method).
 2. Run `TrustMIS.ipynb` that computes the dice metric between `YA` and `YB` for each sample prediction and stores it to `dice_cso`.
-3. Repeat steps 1 and 2 for all the models (mentioned in [IT method](https://github.com/DengPingFan/PraNet)) and get the `dice_cso` for each dataset across all the models.
+3. Repeat steps 1 and 2 for all the models (mentioned in [IT method](https://github.com/SnehaShukla937/TrustMIS/tree/main#31--it-investigating-trustworthiness-method)) and get the `dice_cso` for each dataset across all the models.
 4. Among all the models, the most trustworthy model is selected based on the maximum dice for each sample and their final performance is considered from [INT method](https://github.com/SnehaShukla937/TrustMIS/tree/main#32--int-improving-non-trustworthy-prediction-method).
 ## 4. Citation
 If you find this repository helpful for your project or research, please cite this paper as,
