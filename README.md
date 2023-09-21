@@ -45,7 +45,7 @@ Figure.4: Qualitative result of our proposed INT method, depicting success and f
 ### 3.3  CSO (Classifier Switching Operation) method:
 1. Follow the [INT method](https://github.com/SnehaShukla937/TrustMIS/tree/main#32--int-improving-non-trustworthy-prediction-method).
 2. Run `TrustMIS.ipynb` that computes the dice metric between `YA` and `YB` for each sample prediction and stores it to `dice_cso`.
-3. Repeat steps 1 and 2 for all the models (mentioned in [IT method](https://github.com/SnehaShukla937/TrustMIS/tree/main#31--it-investigating-trustworthiness-method)) and get the `dice_cso` for each dataset across all the models.
+3. Repeat steps 1 and 2 for all the models (mentioned in [IT method](https://github.com/SnehaShukla937/TrustMIS/tree/main#31--it-investigating-trustworthiness-method)) and get the `dice_cso` for each dataset across all the models. (as given in `TrustMIS.ipynb`)
 4. Among all the models, the most trustworthy model is selected based on the maximum dice for each sample and their final performance is considered from [INT method](https://github.com/SnehaShukla937/TrustMIS/tree/main#32--int-improving-non-trustworthy-prediction-method).
 ## 4. Citation
 If you find this repository helpful for your project or research, please cite this paper as,
